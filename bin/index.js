@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 const message = console.log('Hello My Love again');
-
 const fs = require('fs');
 
 //returns an array of the directory // computation
@@ -51,9 +50,6 @@ const copyDir = (originPath, destPath) => {
     })
 }
 
-
-
-
 // make these dynamic?
 const destPath = './app-name'; //dynamic
 const srcDestPath = `${destPath}/src`;
@@ -62,13 +58,11 @@ const originPath = './bin/content'; //not dynamic
 const srcOriginPath = `${originPath}/src`; //get from readDir function it returns an array
 const distOriginPath = `${originPath}/dist`; //get from readDir function it returns an array
 
-
 //list of directories use .push to build this or recursion
 const dirs = []
 const files = []
     
-
 createDir(destPath);//creates the root directory of the project
 copyDir(originPath, destPath);//creates the children files and directories
 copyDir(srcOriginPath, srcDestPath);//creates the grandchildren files and directories
-copyDir(distPath, distRootPath);//more grandchildren
+copyDir(distOriginPath, distDestPath);//more grandchildren
