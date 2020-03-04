@@ -9,6 +9,7 @@
   "keywords": [],
   "author": "Gingja the Ninja",
   "license": "ISC",
+  
   "bin": {
     "hello": "./bin/index.js"
   },
