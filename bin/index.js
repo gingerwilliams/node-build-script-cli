@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const message = console.log('Hello My Love again');
 const fs = require('fs');
+require('./cli').cli(process.argv);
 
 //returns an array of the directory // computation
 const readDir = (path) => {
