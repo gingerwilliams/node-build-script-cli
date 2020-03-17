@@ -52,7 +52,7 @@ const copyDir = (originPath, destPath) => {
 }
 
 // make these dynamic?
-const destPath = './app-name'; //dynamic
+const destPath = './'; //dynamic
 const srcDestPath = `${destPath}/src`;
 const distDestPath = `${destPath}/dist`;
 const originPath = './bin/content'; //not dynamic
