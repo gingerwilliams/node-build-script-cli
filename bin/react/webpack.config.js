@@ -72,7 +72,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./src/index.html",
             title: "Book Header Widgets",
-            version: JSON.stringify(require("./package.json").version),
+            version: JSON.stringify(require("./package.json.js").version),
             inject: "body"
             
         })
