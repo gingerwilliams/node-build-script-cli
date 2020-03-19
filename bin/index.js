@@ -55,7 +55,7 @@ const copyDir = (originPath, destPath) => {
 const destPath = './'; //dynamic
 const srcDestPath = `${destPath}/src`;
 const distDestPath = `${destPath}/dist`;
-const originPath = `${__dirname}/react`; //dynamic
+const originPath = `${__dirname}/react`; //dynamic dyrectory fron node package
 const srcOriginPath = `${originPath}/src`; //get from readDir function it returns an array
 const distOriginPath = `${originPath}/dist`; //get from readDir function it returns an array
 
